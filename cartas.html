@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Poker</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <img class="logo" src="img/logo1.png" alt="ShowDown">
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="imgCartas">
+                <img class="cartas" src="img/1.png" alt="" data-carta="1">
+                <img class="cartas" src="img/2.png" alt="" data-carta="2">
+                <img class="cartas" src="img/3.png" alt="" data-carta="3">
+                <img class="cartas" src="img/4.png" alt="" data-carta="4">
+                <img class="cartas" src="img/5.png" alt="" data-carta="5">
+                <img class="cartas" src="img/6.png" alt="" data-carta="6">
+                <img class="cartas" src="img/7.png" alt="" data-carta="7">
+                <img class="cartas" src="img/8.png" alt="" data-carta="8">
+                <img class="cartas" src="img/9.png" alt="" data-carta="9">
+                <img class="cartas" src="img/10.png" alt="" data-carta="10">
+                <img class="cartas" src="img/11.png" alt="" data-carta="11">
+                <img class="cartas" src="img/12.png" alt="" data-carta="12">
+                <img class="cartas" src="img/13.png" alt="" data-carta="13">
+            </div>
+
+            <div class="informacion">
+                <div class="tabla">
+                    <h2>Listado de Cartas</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Carta</th>
+                                <th>Cant</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista">
+                            <tr>
+                                <td>1</td>
+                                <td>As</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2 Diamantes</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="registro">
+                    <h2>Registro de Cartas</h2>
+                    <form class="formularioRegistro">
+                        <label for="inputNumero" class="labels">Número</label>
+                        <input type="text" id="numero" placeholder="Ingrese el número" class="inputs">
+                        <label for="inputCarta" class="labels" >Carta</label>
+                        <input type="text" id="carta" placeholder="Ingrese la carta" class="inputs">
+                        <button class="btn-registrar" id="registrar">Guardar</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

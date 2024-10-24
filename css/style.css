@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Gochi+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondo.jpg');
+}
+
+header {
+    height: 10%;
+    width: 100%;
+}
+
+header nav {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo {
+    margin-left: 4%;
+    width: 120px;
+    height: 120px;
+    height: 10%;
+}
+
+main {
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    width: 92%;
+}
+
+.contenedor {
+    display: flex;
+}
+
+h2 {
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.imgCartas {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 50%;
+}
+
+.imgCartas img {
+    width: 80%;
+    height: auto;
+}
+
+.informacion {
+    text-align: center;
+    width: 50%;
+    align-items: center;
+}
+
+.tabla {
+    width: 100%;
+}
+
+.table {
+    line-height: 30px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 85%;
+    margin-right: 10%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: left;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+}
+
+thead tr:nth-child(odd) {
+    background-color: rgb(209, 18, 18);
+    color: white;
+
+}
+
+/* Color de fondo para las filas impares */
+tbody tr:nth-child(odd) {
+    background-color: rgba(190, 190, 190, 0.793);
+}
+
+/* Color de fondo para las filas pares */
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+.registro {
+    margin-top: 40px;
+}
+
+.formularioRegistro {
+    font-family: "Playpen Sans", cursive;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    margin-top: 15px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    margin-left: 15%;
+    width: 70%;
+    display: grid;
+    columns: 1;
+    line-height: 2;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.inputs {
+    justify-self: center; /* Centra el botón horizontalmente */
+    align-self: center; 
+    width: 80%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid rgba(28, 13, 13, 0.49);
+}
+
+.labels {
+    justify-self: center; /* Centra el botón horizontalmente */
+    align-self: center; 
+    width: 80%;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.btn-registrar {
+    justify-self: center; /* Centra el botón horizontalmente */
+    align-self: center; 
+    margin-top: 20px;
+    width: 80%;
+    padding: 5px;
+    background-color: rgb(246, 47, 47);
+    border: 2px solid rgb(255, 69, 69);
+    border-radius: 8px;
+    color: white;
+    font-family: "Chelsea Market", system-ui;
+}
+
+.btn-registrar:hover {
+    background-color: black;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contenedor {
+        width: 100%;
+        display: block;
+    }
+
+    body{
+        align-items: center;
+    }
+
+    .imgCartas,
+    .informacion {
+        width: 100%;
+    }
+
+    .imgCartas{
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+
+    nav{
+        text-align: center;
+    }
+}
+

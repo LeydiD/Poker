@@ -1,0 +1,153 @@
+/* Estilos para el contenedor principal */
+#contain {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: borderColorChange 6s infinite linear;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Animación de cambio de color en el borde */
+@keyframes borderColorChange {
+  0% {
+    border: 4px solid white;
+  }
+  25% {
+    border: 4px solid red;
+  }
+  50% {
+    border: 4px solid black;
+  }
+  75% {
+    border: 4px solid gray;
+  }
+  100% {
+    border: 4px solid darkblue;
+  }
+}
+
+/* Estilos para el botón de iniciar sesión */
+#logear {
+  background-color: red;
+  font-family: 'Chelsea Market', system-ui;
+  font-weight: 400;
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+#logear:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Botones sociales */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-buttons a {
+  border: 2px solid red;
+  color: red;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+
+}
+
+.social-buttons a:hover {
+  background-color: black;
+  color: white;
+}
+
+.social-buttons svg {
+  fill: red;
+}
+
+/* Enlaces del formulario */
+.form-links a {
+  color: #ff0e0e;
+}
+
+.form-links a:hover {
+  color: #ff2b2b;
+  text-decoration: none;
+}
+
+/* Ajustes generales para el body */
+body {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Ajustes para la imagen */
+.img-fluid {
+  margin-top: 20%; /* Margen superior en pantallas grandes */
+  border-radius: 1rem 0 0 1rem;
+  width: 100%;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .img-fluid {
+    margin-top: 10%; /* Ajuste del margen superior en pantallas medianas */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .social-buttons{
+    text-align: center;
+    display: block;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .social-buttons a{
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #contain {
+    padding: 1rem; /* Reduce el padding en pantallas pequeñas */
+    width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+
+  .form-links,
+  .social-buttons {
+    text-align: center;
+  }
+
+  #logear {
+    width: 100%; /* Asegura que el botón ocupe todo el ancho disponible en pantallas pequeñas */
+  }
+
+  .img-fluid {
+    margin-top: 5%; /* Ajusta la imagen para pantallas pequeñas */
+  }
+
+  .social-buttons{
+    text-align: center;
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    justify-content: center;
+  }
+  
+}
